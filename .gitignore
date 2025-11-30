@@ -23,4 +23,4 @@ dist-ssr
 *.sln
 *.sw?
 journal.zip
-.env
+.env2
