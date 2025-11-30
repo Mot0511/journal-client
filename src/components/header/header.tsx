@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import cl from './header.module.sass'
-import { GoPencil } from "react-icons/go"
-import { FaCheck } from "react-icons/fa6";
 
 import SortIcon from '../../img/sort.png'
 import FilterIcon from '../../img/filter.png'
@@ -45,7 +43,6 @@ const Header = (
     }) => {
 
     // Состояния на отображение...
-    const [isInfoEditing, setInfoEditing] = useState<boolean>(); // ...полей ввода ФИО преподавателя и предмета
     const [isContextStudentsVisible, setIsContextStudentsVisible] = useState<boolean>(); // ... контекстного меню кнопки "Студенты"
     const [isContextColumnsVisible, setIsContextColumnsVisible] = useState<boolean>(); // ... контекстного меню кнопки "Столбцы"
     const [isStudentModalVisible, setIsStudentModalVisible] = useState<boolean>(false) // ... модального окна "Добавить студента"
@@ -82,7 +79,8 @@ const Header = (
             }
             {/* Поля ввода ФИО преподавателя и предмета */}
             <div className={cl.info}>
-                {
+            <h2 className={cl.heading}>{teacher} / {subject}</h2>
+                {/* {
                     isInfoEditing
                         ? <div>
                             <input className='input' value={teacher} onChange={e => onTeacherEdit(e.target.value)} />
@@ -90,7 +88,7 @@ const Header = (
                             <input className='input' value={subject} onChange={e => onSubjectEdit(e.target.value)} />
                         </div>
                         : <h2 className={cl.heading}>{teacher} / {subject}</h2>
-                }
+                } */}
                 
                 {/* <button className={cl.edit_btn} onClick={() => setInfoEditing(!isInfoEditing)}>
                     {

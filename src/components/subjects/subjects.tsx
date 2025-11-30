@@ -1,4 +1,3 @@
-import React from 'react'
 import cl from './subjects.module.sass'
 import type SubjectType from '../../types/subject';
 

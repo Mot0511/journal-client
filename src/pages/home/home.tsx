@@ -18,7 +18,6 @@ import getStudentData from '../../services/getStudentData';
 import Subjects from '../../components/subjects/subjects';
 import type SubjectType from '../../types/subject';
 import SubjectService from '../../services/SubjectService';
-import { LiaMercurySolid } from 'react-icons/lia';
 import type LectureType from '../../types/lecture';
 import type PracticeType from '../../types/practice';
 import type LabType from '../../types/lab';
@@ -415,7 +414,7 @@ const Home = () => {
                     teacher={teacher} 
                     onTeacherEdit={(value: string) => setTeacher(value)}
                     subject={selectedSubject!.title} 
-                    onSubjectEdit={(value: string) => {}}
+                    onSubjectEdit={(_) => {}}
                     groups={groups}
                     onAddStudent={onAddStudent}
                     onRemoveStudent={onRemoveStudent}
