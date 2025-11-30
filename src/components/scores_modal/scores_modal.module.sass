@@ -1,0 +1,94 @@
+.modal
+    width: 50vw
+    height: 65vh
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-25vw, -25vh)
+    border: 1px solid #0062E1
+    border-radius: 50px
+    background-color: #EFF1F2
+    z-index: 3
+    .header
+        height: 110px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-left: 40px
+        border-radius: 50px 50px 0 0
+        background-color: white
+        h1
+            font-size: 40px
+        p
+            font-size: 25px
+            cursor: pointer
+            margin-right: 25px
+    
+    .body
+        height: 75%
+        margin: 5px 20px 15px 20px
+        background-color: white
+        border-radius: 0 0 50px 50px
+        .content
+            height: 100%
+            top: 20px
+            display: flex
+            flex-direction: column
+            align-items: center
+            .inputs
+                display: flex
+                align-items: center
+                .count_input
+                    width: 30%
+                    height: 50px
+                    color: black
+                    padding-left: 20px
+                    margin: 20px 5px
+                    border-radius: 30px
+                    border: 1px solid #0062E1
+                    font-size: 20px
+                
+                .count_input::placeholder
+                    font-size: 20px
+
+            .scores
+                width: 85%
+                height: 90%
+                overflow-y: scroll
+                .score
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    margin-bottom: 10px
+                    font-size: 32px
+                    .value
+                        width: 70%
+                    .value_input
+                        width: 70%
+                        margin-right: 20px
+                        height: 30px
+                        font-size: 30px
+                    .checkbox
+                        transform: scale(2)
+                        margin-left: 10px
+                        margin-right: 20px
+                    .score
+                        width: 20%
+                    .removeBtn
+                        width: 10%
+                        
+
+
+            .btns
+                width: 100%
+                height: 20%
+                display: flex
+                justify-content: end
+                padding-right: 40px
+                .btn
+                    width: 180px
+                    height: 50px
+                    border: 1px solid #0062E1
+                    border-radius: 30px
+                    font-size: 24px
+                    margin-left: 10px

@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Jura", sans-serif;
+    font-weight: bold;
+    color: #0062E1;
+}
+
+body {
+    background-color: #FBFBFF;
+    height: 100vh
+}
+
+#root {
+    height: 100%;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    overflow-x: scroll
+}
+
+button {
+    position: relative;
+    background: none;
+    border: 0;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px
+}
+
+button:hover {
+    background-color: #F0F3F9;
+}
+
+.input {
+    width: 200px;
+    height: 30px;
+    color: black;
+    padding-left: 10px;
+    margin: 0 5px;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+select {
+    width: 520px;
+    height: 50px;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    border-radius: 30px;
+    border: 1px solid #0062E1;
+    font-size: 20px;
+    padding-left: 20px;
+    color: #818496;
+}
+    
+.checkbox {
+    transform: scale(1.3);
+    cursor: pointer
+}
+    

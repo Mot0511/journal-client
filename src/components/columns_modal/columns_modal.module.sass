@@ -1,0 +1,78 @@
+.modal
+    width: 50vw
+    height: 50vh
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-25vw, -25vh)
+    border: 1px solid #0062E1
+    border-radius: 50px
+    background-color: #EFF1F2
+    z-index: 3
+    .header
+        height: 110px
+        display: flex
+        align-items: center
+        padding-left: 40px
+        border-radius: 50px 50px 0 0
+        background-color: white
+        h1
+            font-size: 40px
+    
+    .body
+        position: relative
+        height: 70%
+        margin: 5px 20px 15px 20px
+        background-color: white
+        border-radius: 0 0 50px 50px
+        .content
+            position: relative
+            top: 20px
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            .count_input 
+                width: 100px
+                height: 50px
+                color: black
+                padding-left: 20px
+                margin: 20px 5px
+                border-radius: 30px
+                border: 1px solid #0062E1
+                font-size: 20px
+            
+            .count_input::placeholder
+                font-size: 20px
+
+            .date_input
+                width: 600px
+                height: 50px
+                appearance: none
+                background-color: transparent;
+                border: none
+                padding: 0 1em 0 0
+                margin: 0
+                font-family: inherit
+                font-size: inherit
+                cursor: inherit
+                line-height: inherit
+                border-radius: 30px
+                border: 1px solid #0062E1
+                font-size: 20px
+                padding-left: 20px
+                color: #818496
+            
+
+        .btns
+            position: absolute
+            bottom: 0
+            right: 30px
+            margin-bottom: 20px
+            .btn
+                width: 180px
+                height: 50px
+                border: 1px solid #0062E1
+                border-radius: 30px
+                font-size: 24px
+                margin-left: 10px
