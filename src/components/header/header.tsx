@@ -12,9 +12,7 @@ import ColumnsModal from '../columns_modal/columns_modal';
 const Header = (
     {   
         teacher, 
-        onTeacherEdit, 
         subject, 
-        onSubjectEdit,
         groups,
         onAddStudent,
         onRemoveStudent,
@@ -27,9 +25,7 @@ const Header = (
         search
     }: {
         teacher: string, 
-        onTeacherEdit: (teacher: string) => void,
         subject: string,
-        onSubjectEdit: (subject: string) => void,
         groups: GroupType[],
         onAddStudent: (userdata: {}) => void
         onRemoveStudent: () => void,

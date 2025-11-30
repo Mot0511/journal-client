@@ -412,9 +412,7 @@ const Home = () => {
                 {/* Шапка */}
                 <Header 
                     teacher={teacher} 
-                    onTeacherEdit={(value: string) => setTeacher(value)}
                     subject={selectedSubject!.title} 
-                    onSubjectEdit={(_) => {}}
                     groups={groups}
                     onAddStudent={onAddStudent}
                     onRemoveStudent={onRemoveStudent}
