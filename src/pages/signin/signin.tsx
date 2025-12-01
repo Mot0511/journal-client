@@ -37,7 +37,7 @@ const Signin = () => {
                     <input type="text" value={login} onChange={e => setLogin(e.target.value)} className='input' placeholder='Логин'/><br />
                     <input type="password" value={password} onChange={e => setPassword(e.target.value)} className='input' placeholder='Пароль'/><br /><br />
                     <div>
-                        <label className={cl.isTeacherLabel} htmlFor="isTeacher">Я учитель</label>
+                        <label className={cl.isTeacherLabel} htmlFor="isTeacher">Я преподаватель</label>
                         <input type="checkbox" id='isTeacher' checked={isTeacher} onChange={() => setIsTeacher(!isTeacher)} className='checkbox' placeholder='Я учитель'/><br /><br />
                     </div>
                     <button onClick={submit}>Войти</button>

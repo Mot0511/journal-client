@@ -231,8 +231,6 @@ const Home = () => {
             }
             for (let group of groups) {
                 for (let student of group.students) {
-                    const id = getRandomInt(1, 10000)
-                    column.id = id
                     if (!selectedSubject) return
                     switch (lessonType) {
                         case 'lecture':
@@ -336,12 +334,7 @@ const Home = () => {
                         if (tasksCount > lab.tasks.length) {
                             const newTasks = []
                             for (let i = lab.tasks.length + 1; i <= tasksCount; i++) {
-                                newTasks.push({
-                                    id: Date.now() + getRandomInt(0, 10000),
-                                    value: '',
-                                    valueType: 'symbol'
-                                })
-                                await LabService.createActivity({
+                                const activity = await LabService.createActivity({
                                     studentId: student.id,
                                     subjectId: selectedSubject?.id,
                                     teacherId: Number(localStorage.getItem('id')),
@@ -352,6 +345,11 @@ const Home = () => {
                                     mark: ' ',
                                     number: i,
                                     taskNumber: lab.number
+                                })
+                                newTasks.push({
+                                    id: activity.id,
+                                    value: '',
+                                    valueType: 'symbol'
                                 })
                             }
                             Array.prototype.push.apply(lab.tasks, newTasks)
